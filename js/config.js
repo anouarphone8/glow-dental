@@ -11,7 +11,7 @@ window.CFG = {
     { zone: 'Gérant', name: 'Youssef', tel: '0663155192' }
   ],
   orderPrefix: 'YD',                 // numéro de commande : YD-AAMMJJ-001
-  site: 'https://glow-dental.vercel.app',
+  site: 'https://glow-dental-three.vercel.app',
   // URL de l'application Web Apps Script (backend/Code.gs). Vide = le site marche sans Google Sheet.
   api: ''
 };
