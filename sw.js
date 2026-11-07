@@ -1,5 +1,5 @@
 // Service worker : app hors-ligne. Changer VERSION à chaque mise à jour du site.
-const VERSION = 'yd-v1';
+const VERSION = 'yd-v2';
 const CORE = ['./', 'index.html', 'css/app.css', 'js/config.js', 'js/app.js', 'data/products.json', 'manifest.webmanifest', 'img/ui/logo.png', 'img/ui/icon-192.png', 'fonts/jakarta.woff'];
 self.addEventListener('install', e => e.waitUntil(caches.open(VERSION).then(c => c.addAll(CORE)).then(() => self.skipWaiting())));
 self.addEventListener('activate', e => e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== VERSION).map(k => caches.delete(k)))).then(() => self.clients.claim())));
