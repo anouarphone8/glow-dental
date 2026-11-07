@@ -40,7 +40,7 @@ function setData(cats, products) {
   BY = {}; PRODUCTS.forEach(p => BY[p.id] = p);
 }
 const catName = id => (CATS.find(c => c.id === id) || {}).name || '';
-const img = id => `img/p/${encodeURIComponent(id)}.webp`;
+const img = id => `img/p/${encodeURIComponent(id)}.webp?v=2`;  // ?v= : change it when photos are replaced (busts HTTP cache)
 const priceOf = (p, vi) => p.v ? (p.v[vi] || p.v[0]).p : p.p;
 const minPrice = p => p.v ? Math.min(...p.v.map(o => o.p).filter(x => x != null)) : p.p;
 const hasPrice = n => n != null && isFinite(n);

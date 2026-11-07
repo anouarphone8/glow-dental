@@ -73,7 +73,7 @@ function productsHTML() {
 }
 function prodHTML(p) {
   const rows = p.v ? p.v : null;
-  return `<div class="prod" data-id="${esc(p.id)}"><img src="img/p/${encodeURIComponent(p.id)}.webp" alt="" loading="lazy" onerror="this.src='img/ui/logo.png'"><div class="mid"><b>${esc(p.name)}</b><small style="color:var(--muted)">${esc(p.u || '')}</small>
+  return `<div class="prod" data-id="${esc(p.id)}"><img src="img/p/${encodeURIComponent(p.id)}.webp?v=2" alt="" loading="lazy" onerror="this.src='img/ui/logo.png'"><div class="mid"><b>${esc(p.name)}</b><small style="color:var(--muted)">${esc(p.u || '')}</small>
     <div class="opts">${rows ? rows.map(o => `<div class="o"><input class="l" value="${esc(o.l)}" aria-label="Option"><input class="p" inputmode="decimal" value="${o.p ?? ''}" placeholder="sur dem." aria-label="Prix"></div>`).join('') :
       `<div class="o"><input class="p" style="max-width:none" inputmode="decimal" value="${p.p ?? ''}" placeholder="Prix sur demande" aria-label="Prix"></div>`}</div>
     <button class="btn ghost sm" style="margin-top:6px;height:32px" data-addopt>+ option</button>
