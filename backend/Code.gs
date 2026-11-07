@@ -7,7 +7,7 @@
  *    (Ila bghiti: Paramètres du projet → coche "Afficher appsscript.json" w 7ett fih l-contenu dyal backend/appsscript.json)
  * 3) F Apps Script: Paramètres du projet (⚙️) → Propriétés du script → Ajouter :
  *      ADMIN_PIN        = code dyal l-admin (ex: 6 ar9am). MATKTBOHCH F GITHUB ABADAN.
- *      SITE_URL         = https://glow-dental.vercel.app   (l-URL dyal site)
+ *      SITE_URL         = https://glow-dental-three.vercel.app   (l-URL dyal site)
  *      NOTIFY_EMAIL     = (ikhtiyari) email bach yjik message f kol commande
  *      CALLMEBOT_PHONE  = (ikhtiyari) ra9m WhatsApp dyalek b 212… (CallMeBot)
  *      CALLMEBOT_KEY    = (ikhtiyari) l-apikey li kat3tik CallMeBot
